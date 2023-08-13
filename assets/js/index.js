@@ -34,6 +34,13 @@ let textGenerator = (e) => {
         input.value = ''
         // if it is between 0 to 9
     } else {
+        for (let i = 0; i < inValue; i++) {
+            // the result innerHTML will be input value's number
+            // Array [ 0 to 9 ]
+            result.innerHTML += `${dummyText[i]}`
+        }
+        // empty the input value
+        input.value = ''
     }
 }
 
