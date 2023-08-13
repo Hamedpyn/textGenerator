@@ -13,6 +13,20 @@ const dummyText = [
 
 // Select DOM Elements
 let
-  result = document.querySelector('#result'),
-  input = document.querySelector('input'),
-  button = document.querySelector('button');
+    result = document.querySelector('#result'),
+    input = document.querySelector('input'),
+    button = document.querySelector('button');
+
+
+// Text Generator function
+let textGenerator = (e) => {
+    // Be empty after each click
+    result.innerHTML = ''
+    // Don't reload the page after each click
+    e.preventDefault()
+    let inValue = input.value
+}
+
+
+// if the button has been clicked , run the text generator function
+button.addEventListener('click', textGenerator)
