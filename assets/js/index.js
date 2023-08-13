@@ -25,15 +25,16 @@ let textGenerator = (e) => {
     // Don't reload the page after each click
     e.preventDefault()
     let inValue = input.value
+
+    // if input value is empty or if it is more than 9 or less than 0
     if (inValue === '' || inValue < 0 || inValue > 9) {
         // show an error alert
         alert('عددی بین 1 تا 9 وارد کنید')
         // empty the input value
         input.value = ''
-      
         // if it is between 0 to 9
-      } else {
-      }
+    } else {
+    }
 }
 
 
